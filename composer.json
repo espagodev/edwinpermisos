@@ -1,0 +1,31 @@
+{
+    "name": "edwin/edwinpermisos",
+    "description": "Sistema de Roles y Permisos",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Edwin\\Edwinpermisos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edwin Patiño",
+            "email": "espagodev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "orchestra/testbench": "^6.24"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Edwin\\Edwinpermisos\\edwinPermisosServiceProvider",
+                "Edwin\\Edwinpermisos\\AuthServiceProvider",
+                "Edwin\\Edwinpermisos\\EventServiceProvider"
+            ]
+        }
+    }
+}
